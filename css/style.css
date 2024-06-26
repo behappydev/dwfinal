@@ -491,6 +491,14 @@ iframe {
     color: #021f03;
   }
 
+  h2.bienvenida-main {
+    margin: 20px auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 160px;
+    color: #021f03;
+  }
+
   .bienvenida-img {
     max-width: 100%;
     margin-top: 10px;
