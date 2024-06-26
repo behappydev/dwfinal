@@ -131,8 +131,7 @@ nav a:hover {
   width: 200px;
   display: block;
   margin: 0 auto;
-  vertical-align: middle;
-  border-radius: 15px;
+git  border-radius: 15px;
 }
 
 .fixed-nav {
