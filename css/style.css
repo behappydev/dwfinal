@@ -120,10 +120,17 @@ nav a:hover {
 }
 
 .product-item1 img,
-.product-item2 img,
 .product-item3 img {
   width: 200px;
-  margin-right: 369px;
+  margin-right: 0px;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+.product-item2 {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
   vertical-align: middle;
   border-radius: 15px;
 }
