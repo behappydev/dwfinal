@@ -5,201 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Verdancy</title>
     <meta
-    name="description"
-    content="Verdancy, Elevando la belleza natural a un nivel superior"
-  />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000000" />
-  <link
-    rel="apple-touch-icon"
-    sizes="152x152"
-    href="../favicon/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="../favicon/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="../favicon/favicon-16x16.png"
-  />
-  <link rel="manifest" href="../favicon/site.webmanifest" />
-  <link
-    rel="mask-icon"
-    href="../favicon/safari-pinned-tab.svg"
-    color="#5bbad5"
-  />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <!--CSS-->
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />  
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-</head>
-<body>
-  <!--Header-->
-<header class="d-flex flex-column">
-  <div class="header-info text-center">
-        <h1 class="title">Blog | Verdancy</h1>
-        <div class="light-effect"></div>
-      </div>
-      <nav class="fixed-nav">
-        <strong class="title-nav">Blog | Verdancy</strong>
+      name="description"
+      content="Verdancy, Elevando la belleza natural a un nivel superior"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="d-flex flex-column">
+      <nav>
+        <strong class="title-nav">Verdancy</strong>
         <ul>
           <li>
-            <a href="../index.html"><p>Home</p></a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="./products.html"><p>Products</p></a>
+            <a href="../pages/products.html">Products</a>
           </li>
           <li>
-            <a href="./company.html"><p>Company</p></a>
+            <a href="../pages/company.html">Company</a>
           </li>
           <li>
-            <a href="./contact.html"><p>Contact</p></a>
+            <a href="../pages/contact.html">Contact</a>
           </li>
           <li>
-            <a href="./blog.html"><p>Blog</p></a>
+            <a href="../pages/blog.html">Blog</a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="main-others">
-      <h2 class="bienvenida">
-        Nuestro Blog Verdancy, tu destino para plantas premium y elegantes
-      </h2>
-      <h2 id="blog">Nuestro Blog</h2>
-      <p>
-        Nuestros Blog es de calidad premium para brindarte la mejor sensación de
-        frescura y elegancia
-      </p>
-      <ul>
-        <li class="coming-soon"><strong>Coming soon</strong></li>
-      </ul>
-      <h2 id="contactanos">Contactanos</h2>
-      <p>
-        Si buscas comprar, contactanos vía redes sociales o envíanos un mensaje
-        completando el siguiente formulario
-      </p>
-      <!--Form-->
-      <h2>Formulario de Contacto</h2>
-      <form method="post" action="/" class="row g-3">
-        <fieldset>
-          <legend>Información personal</legend>
-          <div id="form-name" class="col-12">
-            <label for="name">Nombre completo:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Richard Harrison"
-              required
-              class="form-control"
-            />
+      <section class="plant-care-tips" class="container py-5">
+        <h2 class="text-center mb-4">Consejos de Cuidado de Plantas</h2>
+        <div class="row plant-tips">
+          <div class="col-lg-10 mx-auto">
+            <ul class="list-group list-group-flush">
+              <!-- Consejo 1 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">1. Conoce las necesidades específicas</h5>
+                <p>
+                  Es crucial conocer las necesidades específicas de cada tipo de
+                  planta. Algunas plantas requieren más luz solar, mientras que
+                  otras prefieren la sombra parcial. Asegúrate de ubicarlas en
+                  el lugar adecuado según sus requerimientos.
+                </p>
+              </li>
+              <!-- Consejo 2 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">2. Riego adecuado</h5>
+                <p>
+                  La mayoría de las plantas no toleran bien el exceso de agua.
+                  Es mejor regar a fondo y permitir que el suelo se seque antes
+                  de volver a regar. Utiliza agua de lluvia o filtrada si es
+                  posible.
+                </p>
+              </li>
+              <!-- Consejo 3 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">3. Poda regular</h5>
+                <p>
+                  La poda regular puede estimular el crecimiento y mantener tus
+                  plantas con un aspecto ordenado. Elimina hojas muertas o
+                  enfermas para prevenir la propagación de enfermedades.
+                </p>
+              </li>
+              <!-- Consejo 4 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">4. Fertilización</h5>
+                <p>
+                  Algunas plantas se benefician de la fertilización periódica.
+                  Utiliza fertilizantes específicos para cada tipo de planta y
+                  sigue las instrucciones del fabricante para no sobrecargarlas.
+                </p>
+              </li>
+              <!-- Consejo 5 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">5. Control de plagas</h5>
+                <p>
+                  Inspecciona tus plantas regularmente y actúa rápidamente si
+                  notas la presencia de insectos o signos de enfermedad. Los
+                  remedios caseros como una solución de jabón y agua pueden ser
+                  efectivos.
+                </p>
+              </li>
+              <!-- Consejo 6 -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">6. Entorno adecuado</h5>
+                <p>
+                  Proporciona a tus plantas un entorno adecuado. La temperatura
+                  y la humedad deben ser consistentes con las condiciones de su
+                  hábitat natural. Con estos consejos, tus plantas prosperarán y
+                  añadirán belleza y frescura a tu hogar.
+                </p>
+              </li>
+            </ul>
           </div>
-          <div id="form-email" class="col-12">
-            <label for="form-email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="richardharrison@gmail.com"
-              required
-              class="form-control"
-            />
-          </div>
-          <div id="form-message" class="col-12">
-            <label for="text">Mensaje:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Describí tu mensaje"
-              required
-              rows="5"
-              class="form-control"
-            ></textarea>
-          </div>
-          <div class="col-12">
-            <input type="submit" value="Enviar" class="btn btn-primary" />
-          </div>
-        </fieldset>
-      </form>
-      <!--Fin Form-->
-
+        </div>
       </section>
     </main>
-
     <footer>
-      <p>Copyright © 2024 - Verdancy</p>
-      <p>
-        <a class="a-footer"
-         href="=mailto:support@verdancy.com" 
-         target="_blank"
-         rel="noreferrer"
-          >Contacto:</a
-        >
-        support@verdancy.com
-      </p>
-      <p>
-        <a
-          class="a-footer"
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          rel="noreferrer"
-          >Whatsapp:</a
-        >
-        +549116323821
-      </p>
-      <div class="social-icons">
-        <a
-          href="https://www.facebook.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/fb.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/wsp.png" alt="WhatsApp" />
-        </a>
-        <a
-          href="https://www.instagram.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/ig.png" alt="Instagram" />
-        </a>
-      </div>
-      <img
-        class="footer-banner"
-        src="../img/bienvenidaImg.png"
-        alt="footer banner"
-      />
-      <iframe
-        class="map-container"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <section class="row">
+        <div class="col">
+          <iframe
+            class="map-container"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col">
+          <p>Copyright © 2024 - Verdancy</p>
+          <p>
+            <a
+              class="a-footer"
+              href="=mailto:support@verdancy.com"
+              target="_blank"
+              rel="noreferrer"
+              >Contacto:</a
+            >
+            support@verdancy.com
+          </p>
+          <p>
+            <a
+              class="a-footer"
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              rel="noreferrer"
+              >Whatsapp:</a
+            >
+            +549116323821
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/fb.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/wsp.png" alt="WhatsApp" />
+            </a>
+            <a
+              href="https://www.instagram.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/ig.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            class="footer-banner"
+            src="../img/bienvenidaImg.png"
+            alt="footer banner"
+          />
+        </div>
+      </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

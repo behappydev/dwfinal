@@ -13,181 +13,200 @@
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="./favicon/apple-touch-icon.png"
+      href="../favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png"
+      href="../favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png"
+      href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./favicon/safari-pinned-tab.svg"
+      href="../favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-      <div class="header-info">
-        <h1 class="title">Company | Verdancy</h1>
-        <div class="light-effect"></div>
-      </div>
-      <nav class="fixed-nav">
-        <strong class="title-nav">Company | Verdancy</strong>
+    <!--Header-->
+    <header class="d-flex flex-column">
+      <nav>
+        <strong class="title-nav">Verdancy</strong>
         <ul>
           <li>
-            <a href="../index.html"><p>Home</p></a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="./products.html"><p>Products</p></a>
+            <a href="../pages/products.html">Products</a>
           </li>
           <li>
-            <a href="./company.html"><p>Company</p></a>
+            <a href="../pages/company.html">Company</a>
           </li>
           <li>
-            <a href="./contact.html"><p>Contact</p></a>
+            <a href="../pages/contact.html">Contact</a>
           </li>
           <li>
-            <a href="./blog.html"><p>Blog</p></a>
+            <a href="../pages/blog.html">Blog</a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="main-others">
-      <h2 class="bienvenida">
-        Nuestra Company Verdancy, tu destino para plantas premium y elegantes
-      </h2>
-      <h2 id="company">Nuestra Company</h2>
-      <p>
-        Nuestra Company es de calidad premium para brindarte la mejor sensación
-        de frescura y elegancia
-      </p>
-      <ul>
-        <li class="coming-soon"><strong>Coming soon</strong></li>
-      </ul>
-      <h2 id="contactanos">Contactanos</h2>
-      <p>
-        Si buscas comprar, contactanos vía redes sociales o envíanos un mensaje
-        completando el siguiente formulario
-      </p>
-      <section>
-        <h2>Formulario de Contacto</h2>
-        <form method="post" action="/">
-          <fieldset>
-            <legend>Información personal</legend>
-            <div id="form-name">
-              <label for="name">Nombre completo:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Richard Harrison"
-                required
-              />
-            </div>
-            <div id="form-email">
-              <label for="form-email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="richardharrison@gmail.com"
-                required
-              />
-            </div>
-            <div id="form-message">
-              <label for="text">Mensaje:</label>
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Describí tu mensaje"
-                required
-                rows="5"
-              ></textarea>
-            </div>
-            <input type="submit" value="Enviar" />
-          </fieldset>
-        </form>
+      <section class="plant-care-tips" class="container py-5">
+        <h2 class="text-center mb-4">Sobre Nuestra Empresa</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <ul class="list-group list-group-flush">
+              <!-- Profesionales -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">Profesionales Expertos</h5>
+                <p>
+                  <i class="bi bi-people-fill"></i> Contamos con un equipo de
+                  profesionales altamente capacitados y apasionados por las
+                  plantas. Cada miembro de nuestro equipo tiene años de
+                  experiencia en el cuidado y mantenimiento de plantas premium.
+                </p>
+              </li>
+              <!-- Plantas Premium -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">Plantas Premium</h5>
+                <p>
+                  <i class="bi bi-flower1"></i> Nuestras plantas premium son
+                  seleccionadas cuidadosamente para asegurar la más alta
+                  calidad. Ofrecemos una variedad de especies que son perfectas
+                  para embellecer cualquier espacio.
+                </p>
+              </li>
+              <!-- Mejor Ubicación -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">Mejor Ubicación en Europa</h5>
+                <p>
+                  <i class="bi bi-geo-alt-fill"></i> Ubicados en el corazón de
+                  Europa, tenemos acceso a los mejores proveedores y podemos
+                  ofrecer un servicio rápido y eficiente a nuestros clientes en
+                  todo el continente.
+                </p>
+              </li>
+              <!-- Compromiso con la Calidad -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">Compromiso con la Calidad</h5>
+                <p>
+                  <i class="bi bi-award-fill"></i> Nuestro compromiso con la
+                  calidad es inigualable. Utilizamos las mejores prácticas y
+                  tecnologías para asegurarnos de que cada planta que entregamos
+                  cumple con los estándares más altos.
+                </p>
+              </li>
+              <!-- Servicio al Cliente -->
+              <li class="list-group-item">
+                <h5 class="fw-bold">Servicio al Cliente</h5>
+                <p>
+                  <i class="bi bi-headset"></i> Valoramos a nuestros clientes y
+                  nos esforzamos por ofrecer un servicio al cliente excepcional.
+                  Estamos aquí para responder cualquier pregunta y ofrecer
+                  asesoramiento experto en el cuidado de plantas.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-
     <footer>
-      <p>Copyright © 2024 - Verdancy</p>
-      <p>
-        <a
-          class="a-footer"
-          href="=mailto:support@verdancy.com"
-          target="_blank"
-          rel="noreferrer"
-          >Contacto:</a
-        >
-        support@verdancy.com
-      </p>
-      <p>
-        <a
-          class="a-footer"
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          rel="noreferrer"
-          >Whatsapp:</a
-        >
-        +549116323821
-      </p>
-      <div class="social-icons">
-        <a
-          href="https://www.facebook.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/fb.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/wsp.png" alt="WhatsApp" />
-        </a>
-        <a
-          href="https://www.instagram.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="../img/ig.png" alt="Instagram" />
-        </a>
-      </div>
-      <img
-        class="footer-banner"
-        src="../img/bienvenidaImg.png"
-        alt="footer banner"
-      />
-      <iframe
-        class="map-container"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <section class="row">
+        <div class="col">
+          <iframe
+            class="map-container"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col">
+          <p>Copyright © 2024 - Verdancy</p>
+          <p>
+            <a
+              class="a-footer"
+              href="=mailto:support@verdancy.com"
+              target="_blank"
+              rel="noreferrer"
+              >Contacto:</a
+            >
+            support@verdancy.com
+          </p>
+          <p>
+            <a
+              class="a-footer"
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              rel="noreferrer"
+              >Whatsapp:</a
+            >
+            +549116323821
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/fb.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/wsp.png" alt="WhatsApp" />
+            </a>
+            <a
+              href="https://www.instagram.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="../img/ig.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            class="footer-banner"
+            src="../img/bienvenidaImg.png"
+            alt="footer banner"
+          />
+        </div>
+      </section>
     </footer>
   </body>
 </html>

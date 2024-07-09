@@ -36,7 +36,6 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,45 +48,37 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!--Header-->
     <header class="d-flex flex-column">
-      <div class="header-info text-center">
-        <h1 class="title">Verdancy</h1>
-        <div class="light-effect"></div>
-      </div>
-      <nav
-        class="fixed-nav d-flex justify-content-between align-items-center w-100"
-      >
+      <nav>
         <strong class="title-nav">Verdancy</strong>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/products.html">Products</a>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/company.html">Company</a>
+          <li>
+            <a href="./pages/products.html">Products</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.html">Contact</a>
+          <li>
+            <a href="./pages/company.html">Company</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/blog.html">Blog</a>
+          <li>
+            <a href="./pages/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="./pages/blog.html">Blog</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!--Fin Header-->
-    <main class="container">
-      <section class="welcome-section text-center">
-        <h2 class="bienvenida-main">
-          Bienvenido a Verdancy, tu destino para plantas premium y elegantes
-        </h2>
-        <img
-          class="bienvenida-img img-fluid mx-auto d-block"
-          src="./img/bienvenidaImg.png"
-          alt="bienvenida imagen"
-        />
+    <main id="main-others">
+      <section class="welcome-section">
+        <h1 class="welcome">
+          Verdancy, tu destino para plantas premium y elegantes
+        </h1>
       </section>
       <section class="products-section">
         <h2 id="products">Nuestros productos</h2>
@@ -95,29 +86,26 @@
           Nuestros productos son de calidad premium para brindarte la mejor
           sensación de frescura y elegancia
         </p>
-        <ul class="row">
-          <li class="product-item1 col-12 col-md-4">
-            <img
-              src="./img/montsera1.jpg"
-              alt="Foto Montsera"
-              class="img-fluid"
-            />Montsera
-          </li>
-          <li class="product-item2 col-12 col-md-4">
-            <img
-              src="./img/bouganvillea1.jpg"
-              alt="Foto Bouganvillea"
-              class="img-fluid"
-            />Bouganvillea
-          </li>
-          <li class="product-item3 col-12 col-md-4">
-            <img
-              src="./img/dipladeniaRed1.jpg"
-              alt="Foto Dipladenia"
-              class="img-fluid"
-            />Dipladenia
-          </li>
-        </ul>
+        <section class="row products-gallery">
+          <article class="col">
+            <div class="article-img">
+              <img src="./img/montsera1.jpg" alt="Montsera" />
+            </div>
+            <div class="article-title">Montsera</div>
+          </article>
+          <article class="col">
+            <div class="article-img">
+              <img src="./img/bouganvillea1.jpg" alt="Bouganvillea" />
+            </div>
+            <div class="article-title">Bouganvillea</div>
+          </article>
+          <article class="col">
+            <div class="article-img">
+              <img src="./img/dipladeniaRed1.jpg" alt="Dipladenia" />
+            </div>
+            <div class="article-title">Dipladenia</div>
+          </article>
+        </section>
       </section>
       <section class="contact-section">
         <h2 id="contactanos">Contactanos</h2>
@@ -125,12 +113,11 @@
           Si buscas comprar, contactanos vía redes sociales o envíanos un
           mensaje completando el siguiente formulario
         </p>
-        <!--Form-->
         <h2>Formulario de Contacto</h2>
         <form method="post" action="/">
           <fieldset>
             <legend>Información personal</legend>
-            <div id="form-name" class="col-12">
+            <div id="form-name">
               <label for="name">Nombre completo:</label>
               <input
                 type="text"
@@ -138,10 +125,9 @@
                 name="name"
                 placeholder="Richard Harrison"
                 required
-                class="form-control"
               />
             </div>
-            <div id="form-email" class="col-12">
+            <div id="form-email">
               <label for="form-email">Email:</label>
               <input
                 type="email"
@@ -149,94 +135,92 @@
                 name="email"
                 placeholder="richardharrison@gmail.com"
                 required
-                class="form-control"
               />
             </div>
-            <div id="form-message" class="col-12">
+            <div id="form-message">
               <label for="text">Mensaje:</label>
               <textarea
+                type="text"
                 id="message"
                 name="message"
                 placeholder="Describí tu mensaje"
                 required
                 rows="5"
-                class="form-control"
               ></textarea>
             </div>
-            <div class="col-12">
-              <input type="submit" value="Enviar" class="btn btn-primary" />
-            </div>
+            <input type="submit" value="Enviar" />
           </fieldset>
         </form>
-        <!--Fin Form-->
       </section>
     </main>
-
     <footer>
-      <p>Copyright © 2024 - Verdancy</p>
-      <p>
-        <a
-          class="a-footer"
-          href="mailto:support@verdancy.com"
-          target="_blank"
-          rel="noreferrer"
-          >Contacto:</a
-        >
-        support@verdancy.com
-      </p>
-      <p>
-        <a
-          class="a-footer"
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          rel="noreferrer"
-          >Whatsapp:</a
-        >
-        +549116323821
-      </p>
-      <div class="social-icons d-flex justify-content-center gap-2">
-        <a
-          href="https://www.facebook.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="./img/fb.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="./img/wsp.png" alt="WhatsApp" />
-        </a>
-        <a
-          href="https://www.instagram.com/Verdancy"
-          target="_blank"
-          class="social-icon"
-        >
-          <img src="./img/ig.png" alt="Instagram" />
-        </a>
-      </div>
-      <img
-        class="footer-banner img-fluid mx-auto d-block mt-3"
-        src="./img/bienvenidaImg.png"
-        alt="footer banner"
-      />
-      <iframe
-        class="map-container mt-3"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <section class="row">
+        <div class="col">
+          <iframe
+            class="map-container"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48890593.58373704!2d-18.710101204435016!3d41.58990882419923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1ses-419!2sar!4v1716808251081!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col">
+          <p>Copyright © 2024 - Verdancy</p>
+          <p>
+            <a
+              class="a-footer"
+              href="=mailto:support@verdancy.com"
+              target="_blank"
+              rel="noreferrer"
+              >Contacto:</a
+            >
+            support@verdancy.com
+          </p>
+          <p>
+            <a
+              class="a-footer"
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              rel="noreferrer"
+              >Whatsapp:</a
+            >
+            +549116323821
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="./img/fb.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://wa.me/+549116323821?text=Hola%20Verdancy!"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="./img/wsp.png" alt="WhatsApp" />
+            </a>
+            <a
+              href="https://www.instagram.com/Verdancy"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="./img/ig.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            class="footer-banner"
+            src="./img/bienvenidaImg.png"
+            alt="footer banner"
+          />
+        </div>
+      </section>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
