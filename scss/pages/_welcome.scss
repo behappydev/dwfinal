@@ -1,0 +1,27 @@
+// Welcome section
+.welcome-section {
+  height: 100%;
+  padding: 72px 0;
+  width: 100%;
+  background-image: url("../img/section-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  text-align: center;
+  color: $accent-color-light;
+  font-weight: 800;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.699);
+}
+
+.welcome-img {
+  width: 690px;
+  margin-left: 150px;
+  vertical-align: middle;
+  border-radius: 50px;
+}
